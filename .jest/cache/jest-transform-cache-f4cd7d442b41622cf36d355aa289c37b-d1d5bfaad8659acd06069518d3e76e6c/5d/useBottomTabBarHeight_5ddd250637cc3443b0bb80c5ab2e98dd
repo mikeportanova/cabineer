@@ -1,0 +1,78 @@
+c37e5ab8a12dceb67cd050ce7025380c
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = useFloatingBottomTabBarHeight;
+
+var React = _interopRequireWildcard(require("react"));
+
+var _BottomTabBarHeightContext = _interopRequireDefault(require("./BottomTabBarHeightContext"));
+
+function _interopRequireDefault(obj) {
+  return obj && obj.__esModule ? obj : {
+    default: obj
+  };
+}
+
+function _getRequireWildcardCache(nodeInterop) {
+  if (typeof WeakMap !== "function") return null;
+  var cacheBabelInterop = new WeakMap();
+  var cacheNodeInterop = new WeakMap();
+  return (_getRequireWildcardCache = function _getRequireWildcardCache(nodeInterop) {
+    return nodeInterop ? cacheNodeInterop : cacheBabelInterop;
+  })(nodeInterop);
+}
+
+function _interopRequireWildcard(obj, nodeInterop) {
+  if (!nodeInterop && obj && obj.__esModule) {
+    return obj;
+  }
+
+  if (obj === null || typeof obj !== "object" && typeof obj !== "function") {
+    return {
+      default: obj
+    };
+  }
+
+  var cache = _getRequireWildcardCache(nodeInterop);
+
+  if (cache && cache.has(obj)) {
+    return cache.get(obj);
+  }
+
+  var newObj = {};
+  var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor;
+
+  for (var key in obj) {
+    if (key !== "default" && Object.prototype.hasOwnProperty.call(obj, key)) {
+      var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null;
+
+      if (desc && (desc.get || desc.set)) {
+        Object.defineProperty(newObj, key, desc);
+      } else {
+        newObj[key] = obj[key];
+      }
+    }
+  }
+
+  newObj.default = obj;
+
+  if (cache) {
+    cache.set(obj, newObj);
+  }
+
+  return newObj;
+}
+
+function useFloatingBottomTabBarHeight() {
+  var height = React.useContext(_BottomTabBarHeightContext.default);
+
+  if (height === undefined) {
+    throw new Error("Couldn't find the bottom tab bar height. Are you inside a screen in Bottom Tab Navigator?");
+  }
+
+  return height;
+}
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJtYXBwaW5ncyI6Ijs7Ozs7OztBQUFBOztBQUVBOzs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7O0FBRWUsU0FBU0EsNkJBQVQsR0FBeUM7RUFDdEQsSUFBTUMsTUFBTSxHQUFHQyxLQUFLLENBQUNDLFVBQU5ELENBQWlCRSxrQ0FBakJGLENBQWY7O0VBRUEsSUFBSUQsTUFBTSxLQUFLSSxTQUFmLEVBQTBCO0lBQ3hCLE1BQU0sSUFBSUMsS0FBSixDQUNKLDJGQURJLENBQU47RUFHRDs7RUFFRCxPQUFPTCxNQUFQO0FBQ0QiLCJuYW1lcyI6WyJ1c2VGbG9hdGluZ0JvdHRvbVRhYkJhckhlaWdodCIsImhlaWdodCIsIlJlYWN0IiwidXNlQ29udGV4dCIsIkJvdHRvbVRhYkJhckhlaWdodENvbnRleHQiLCJ1bmRlZmluZWQiLCJFcnJvciJdLCJzb3VyY2VzIjpbInVzZUJvdHRvbVRhYkJhckhlaWdodC50c3giXSwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0ICogYXMgUmVhY3QgZnJvbSAncmVhY3QnO1xuXG5pbXBvcnQgQm90dG9tVGFiQmFySGVpZ2h0Q29udGV4dCBmcm9tICcuL0JvdHRvbVRhYkJhckhlaWdodENvbnRleHQnO1xuXG5leHBvcnQgZGVmYXVsdCBmdW5jdGlvbiB1c2VGbG9hdGluZ0JvdHRvbVRhYkJhckhlaWdodCgpIHtcbiAgY29uc3QgaGVpZ2h0ID0gUmVhY3QudXNlQ29udGV4dChCb3R0b21UYWJCYXJIZWlnaHRDb250ZXh0KTtcblxuICBpZiAoaGVpZ2h0ID09PSB1bmRlZmluZWQpIHtcbiAgICB0aHJvdyBuZXcgRXJyb3IoXG4gICAgICBcIkNvdWxkbid0IGZpbmQgdGhlIGJvdHRvbSB0YWIgYmFyIGhlaWdodC4gQXJlIHlvdSBpbnNpZGUgYSBzY3JlZW4gaW4gQm90dG9tIFRhYiBOYXZpZ2F0b3I/XCJcbiAgICApO1xuICB9XG5cbiAgcmV0dXJuIGhlaWdodDtcbn1cbiJdfQ==

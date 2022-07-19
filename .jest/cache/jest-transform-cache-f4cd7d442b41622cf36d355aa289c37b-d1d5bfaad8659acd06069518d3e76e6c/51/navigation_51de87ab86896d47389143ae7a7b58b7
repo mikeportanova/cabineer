@@ -1,0 +1,65 @@
+7f768a46212909fd1e86c549f785158f
+"use strict";
+var __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) {
+    if (k2 === undefined) k2 = k;
+    var desc = Object.getOwnPropertyDescriptor(m, k);
+    if (!desc || ("get" in desc ? !m.__esModule : desc.writable || desc.configurable)) {
+      desc = { enumerable: true, get: function() { return m[k]; } };
+    }
+    Object.defineProperty(o, k2, desc);
+}) : (function(o, m, k, k2) {
+    if (k2 === undefined) k2 = k;
+    o[k2] = m[k];
+}));
+var __setModuleDefault = (this && this.__setModuleDefault) || (Object.create ? (function(o, v) {
+    Object.defineProperty(o, "default", { enumerable: true, value: v });
+}) : function(o, v) {
+    o["default"] = v;
+});
+var __importStar = (this && this.__importStar) || function (mod) {
+    if (mod && mod.__esModule) return mod;
+    var result = {};
+    if (mod != null) for (var k in mod) if (k !== "default" && Object.prototype.hasOwnProperty.call(mod, k)) __createBinding(result, mod, k);
+    __setModuleDefault(result, mod);
+    return result;
+};
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.TopNavigator = exports.TabNavigator = exports.ChecklistsStackNavigator = exports.HomeStackNavigator = void 0;
+const React = __importStar(require("react"));
+const bottom_tabs_1 = require("@react-navigation/bottom-tabs");
+const native_stack_1 = require("@react-navigation/native-stack");
+const HomeScreen_1 = __importDefault(require("screens/Home/HomeScreen"));
+const CheckListScreen_1 = __importDefault(require("screens/CheckList/CheckListScreen"));
+const MainNavStack = (0, native_stack_1.createNativeStackNavigator)();
+const HomeStack = (0, native_stack_1.createNativeStackNavigator)();
+const ChecklistsStack = (0, native_stack_1.createNativeStackNavigator)();
+const HomeStackNavigator = (props) => {
+    return (React.createElement(HomeStack.Navigator, { screenOptions: {
+            headerShown: false,
+        } },
+        React.createElement(HomeStack.Screen, { name: "HomeMain", component: HomeScreen_1.default })));
+};
+exports.HomeStackNavigator = HomeStackNavigator;
+const ChecklistsStackNavigator = (props) => {
+    return (React.createElement(ChecklistsStack.Navigator, { screenOptions: {
+            headerShown: false,
+        } },
+        React.createElement(ChecklistsStack.Screen, { name: "ChecklistMain", component: CheckListScreen_1.default })));
+};
+exports.ChecklistsStackNavigator = ChecklistsStackNavigator;
+const Tab = (0, bottom_tabs_1.createBottomTabNavigator)();
+const TabNavigator = (props) => {
+    return (React.createElement(Tab.Navigator, null,
+        React.createElement(Tab.Screen, { name: "Home", component: exports.HomeStackNavigator }),
+        React.createElement(Tab.Screen, { name: "Checklists", component: CheckListScreen_1.default })));
+};
+exports.TabNavigator = TabNavigator;
+const TopNavigator = (props) => {
+    return (React.createElement(MainNavStack.Navigator, { screenOptions: { headerShown: false } },
+        React.createElement(MainNavStack.Screen, { name: "App", component: exports.TabNavigator })));
+};
+exports.TopNavigator = TopNavigator;
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJmaWxlIjoiL1VzZXJzL21pa2UvUHJvZ3JhbW1pbmcvcHJvamVjdHMvQ2FiaW5lZXIvc3JjL25hdmlnYXRvcnMvbmF2aWdhdGlvbi50c3giLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7QUFBQSw2Q0FBK0I7QUFFL0IsK0RBQXVFO0FBRXZFLGlFQUEwRTtBQUUxRSx5RUFBaUQ7QUFRakQsd0ZBQWdFO0FBRWhFLE1BQU0sWUFBWSxHQUFHLElBQUEseUNBQTBCLEdBQTBCLENBQUM7QUFDMUUsTUFBTSxTQUFTLEdBQUcsSUFBQSx5Q0FBMEIsR0FBc0IsQ0FBQztBQUNuRSxNQUFNLGVBQWUsR0FBRyxJQUFBLHlDQUEwQixHQUE0QixDQUFDO0FBRXhFLE1BQU0sa0JBQWtCLEdBQUcsQ0FBQyxLQUFVLEVBQUUsRUFBRTtJQUMvQyxPQUFPLENBQ0wsb0JBQUMsU0FBUyxDQUFDLFNBQVMsSUFDbEIsYUFBYSxFQUFFO1lBQ2IsV0FBVyxFQUFFLEtBQUs7U0FDbkI7UUFDRCxvQkFBQyxTQUFTLENBQUMsTUFBTSxJQUFDLElBQUksRUFBQyxVQUFVLEVBQUMsU0FBUyxFQUFFLG9CQUFVLEdBQUksQ0FDdkMsQ0FDdkIsQ0FBQztBQUNKLENBQUMsQ0FBQztBQVRXLFFBQUEsa0JBQWtCLHNCQVM3QjtBQUVLLE1BQU0sd0JBQXdCLEdBQUcsQ0FBQyxLQUFVLEVBQUUsRUFBRTtJQUNyRCxPQUFPLENBQ0wsb0JBQUMsZUFBZSxDQUFDLFNBQVMsSUFDeEIsYUFBYSxFQUFFO1lBQ2IsV0FBVyxFQUFFLEtBQUs7U0FDbkI7UUFDRCxvQkFBQyxlQUFlLENBQUMsTUFBTSxJQUNyQixJQUFJLEVBQUMsZUFBZSxFQUNwQixTQUFTLEVBQUUseUJBQWUsR0FDMUIsQ0FDd0IsQ0FDN0IsQ0FBQztBQUNKLENBQUMsQ0FBQztBQVpXLFFBQUEsd0JBQXdCLDRCQVluQztBQUVGLE1BQU0sR0FBRyxHQUFHLElBQUEsc0NBQXdCLEdBQW9CLENBQUM7QUFFbEQsTUFBTSxZQUFZLEdBQUcsQ0FBQyxLQUFVLEVBQUUsRUFBRTtJQUN6QyxPQUFPLENBQ0wsb0JBQUMsR0FBRyxDQUFDLFNBQVM7UUFDWixvQkFBQyxHQUFHLENBQUMsTUFBTSxJQUFDLElBQUksRUFBQyxNQUFNLEVBQUMsU0FBUyxFQUFFLDBCQUFrQixHQUFJO1FBQ3pELG9CQUFDLEdBQUcsQ0FBQyxNQUFNLElBQUMsSUFBSSxFQUFDLFlBQVksRUFBQyxTQUFTLEVBQUUseUJBQWUsR0FBSSxDQUM5QyxDQUNqQixDQUFDO0FBQ0osQ0FBQyxDQUFDO0FBUFcsUUFBQSxZQUFZLGdCQU92QjtBQUVLLE1BQU0sWUFBWSxHQUFHLENBQUMsS0FBVSxFQUFFLEVBQUU7SUFDekMsT0FBTyxDQUNMLG9CQUFDLFlBQVksQ0FBQyxTQUFTLElBQUMsYUFBYSxFQUFFLEVBQUMsV0FBVyxFQUFFLEtBQUssRUFBQztRQUV6RCxvQkFBQyxZQUFZLENBQUMsTUFBTSxJQUFDLElBQUksRUFBQyxLQUFLLEVBQUMsU0FBUyxFQUFFLG9CQUFZLEdBQUksQ0FDcEMsQ0FDMUIsQ0FBQztBQUNKLENBQUMsQ0FBQztBQVBXLFFBQUEsWUFBWSxnQkFPdkIiLCJuYW1lcyI6W10sInNvdXJjZXMiOlsiL1VzZXJzL21pa2UvUHJvZ3JhbW1pbmcvcHJvamVjdHMvQ2FiaW5lZXIvc3JjL25hdmlnYXRvcnMvbmF2aWdhdGlvbi50c3giXSwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0ICogYXMgUmVhY3QgZnJvbSAncmVhY3QnO1xuaW1wb3J0IHtOYXZpZ2F0aW9uQ29udGFpbmVyfSBmcm9tICdAcmVhY3QtbmF2aWdhdGlvbi9uYXRpdmUnO1xuaW1wb3J0IHtjcmVhdGVCb3R0b21UYWJOYXZpZ2F0b3J9IGZyb20gJ0ByZWFjdC1uYXZpZ2F0aW9uL2JvdHRvbS10YWJzJztcblxuaW1wb3J0IHtjcmVhdGVOYXRpdmVTdGFja05hdmlnYXRvcn0gZnJvbSAnQHJlYWN0LW5hdmlnYXRpb24vbmF0aXZlLXN0YWNrJztcbmltcG9ydCB7Z2V0SGVhZGVyVGl0bGV9IGZyb20gJ0ByZWFjdC1uYXZpZ2F0aW9uL2VsZW1lbnRzJztcbmltcG9ydCBIb21lU2NyZWVuIGZyb20gJ3NjcmVlbnMvSG9tZS9Ib21lU2NyZWVuJztcbmltcG9ydCB0eXBlIHtcbiAgSG91c2VEYXRhLFxuICBSb290VGFiUGFyYW1MaXN0LFxuICBDaGVja2xpc3RzU3RhY2tQYXJhbUxpc3QsXG4gIEhvbWVTdGFja1BhcmFtTGlzdCxcbiAgTWFpbk5hdlN0YWNrUGFyYW1zTGlzdCxcbn0gZnJvbSAnLi4vdHlwZXMnO1xuaW1wb3J0IENoZWNrTGlzdFNjcmVlbiBmcm9tICdzY3JlZW5zL0NoZWNrTGlzdC9DaGVja0xpc3RTY3JlZW4nO1xuXG5jb25zdCBNYWluTmF2U3RhY2sgPSBjcmVhdGVOYXRpdmVTdGFja05hdmlnYXRvcjxNYWluTmF2U3RhY2tQYXJhbXNMaXN0PigpO1xuY29uc3QgSG9tZVN0YWNrID0gY3JlYXRlTmF0aXZlU3RhY2tOYXZpZ2F0b3I8SG9tZVN0YWNrUGFyYW1MaXN0PigpO1xuY29uc3QgQ2hlY2tsaXN0c1N0YWNrID0gY3JlYXRlTmF0aXZlU3RhY2tOYXZpZ2F0b3I8Q2hlY2tsaXN0c1N0YWNrUGFyYW1MaXN0PigpO1xuXG5leHBvcnQgY29uc3QgSG9tZVN0YWNrTmF2aWdhdG9yID0gKHByb3BzOiBhbnkpID0+IHtcbiAgcmV0dXJuIChcbiAgICA8SG9tZVN0YWNrLk5hdmlnYXRvclxuICAgICAgc2NyZWVuT3B0aW9ucz17e1xuICAgICAgICBoZWFkZXJTaG93bjogZmFsc2UsXG4gICAgICB9fT5cbiAgICAgIDxIb21lU3RhY2suU2NyZWVuIG5hbWU9XCJIb21lTWFpblwiIGNvbXBvbmVudD17SG9tZVNjcmVlbn0gLz5cbiAgICA8L0hvbWVTdGFjay5OYXZpZ2F0b3I+XG4gICk7XG59O1xuXG5leHBvcnQgY29uc3QgQ2hlY2tsaXN0c1N0YWNrTmF2aWdhdG9yID0gKHByb3BzOiBhbnkpID0+IHtcbiAgcmV0dXJuIChcbiAgICA8Q2hlY2tsaXN0c1N0YWNrLk5hdmlnYXRvclxuICAgICAgc2NyZWVuT3B0aW9ucz17e1xuICAgICAgICBoZWFkZXJTaG93bjogZmFsc2UsXG4gICAgICB9fT5cbiAgICAgIDxDaGVja2xpc3RzU3RhY2suU2NyZWVuXG4gICAgICAgIG5hbWU9XCJDaGVja2xpc3RNYWluXCJcbiAgICAgICAgY29tcG9uZW50PXtDaGVja0xpc3RTY3JlZW59XG4gICAgICAvPlxuICAgIDwvQ2hlY2tsaXN0c1N0YWNrLk5hdmlnYXRvcj5cbiAgKTtcbn07XG5cbmNvbnN0IFRhYiA9IGNyZWF0ZUJvdHRvbVRhYk5hdmlnYXRvcjxSb290VGFiUGFyYW1MaXN0PigpO1xuXG5leHBvcnQgY29uc3QgVGFiTmF2aWdhdG9yID0gKHByb3BzOiBhbnkpID0+IHtcbiAgcmV0dXJuIChcbiAgICA8VGFiLk5hdmlnYXRvcj5cbiAgICAgIDxUYWIuU2NyZWVuIG5hbWU9XCJIb21lXCIgY29tcG9uZW50PXtIb21lU3RhY2tOYXZpZ2F0b3J9IC8+XG4gICAgICA8VGFiLlNjcmVlbiBuYW1lPVwiQ2hlY2tsaXN0c1wiIGNvbXBvbmVudD17Q2hlY2tMaXN0U2NyZWVufSAvPlxuICAgIDwvVGFiLk5hdmlnYXRvcj5cbiAgKTtcbn07XG5cbmV4cG9ydCBjb25zdCBUb3BOYXZpZ2F0b3IgPSAocHJvcHM6IGFueSkgPT4ge1xuICByZXR1cm4gKFxuICAgIDxNYWluTmF2U3RhY2suTmF2aWdhdG9yIHNjcmVlbk9wdGlvbnM9e3toZWFkZXJTaG93bjogZmFsc2V9fT5cbiAgICAgIHsvKiA8TWFpbk5hdlN0YWNrLlNjcmVlbiBuYW1lPVwiTG9naW5cIiBjb21wb25lbnQ9e0xvZ2luU2NyZWVufSAqL31cbiAgICAgIDxNYWluTmF2U3RhY2suU2NyZWVuIG5hbWU9XCJBcHBcIiBjb21wb25lbnQ9e1RhYk5hdmlnYXRvcn0gLz5cbiAgICA8L01haW5OYXZTdGFjay5OYXZpZ2F0b3I+XG4gICk7XG59O1xuIl0sInZlcnNpb24iOjN9

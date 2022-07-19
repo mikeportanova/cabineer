@@ -1,0 +1,24 @@
+e00a0508f0da7ea9528f9300ca95bc53
+"use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+const react_1 = __importDefault(require("react"));
+const react_native_1 = require("react-native");
+const HomeList_1 = require("components/HomeList/HomeList");
+const HomeScreen_styles_1 = __importDefault(require("./HomeScreen.styles"));
+const data_json_1 = __importDefault(require("../../../data.json"));
+const native_1 = require("@react-navigation/native");
+const HomeScreen = () => {
+    const isDarkMode = (0, react_native_1.useColorScheme)() === 'dark';
+    const navigation = (0, native_1.useNavigation)();
+    return (react_1.default.createElement(react_native_1.SafeAreaView, { style: HomeScreen_styles_1.default.container },
+        react_1.default.createElement(react_native_1.Text, null, "Welcome to the Home Screen"),
+        react_1.default.createElement(react_native_1.Button, { title: "Go To Checklists", onPress: () => navigation.navigate('Checklists', {
+                screen: 'ChecklistMain',
+            }) }),
+        react_1.default.createElement(HomeList_1.HomeList, { data: data_json_1.default })));
+};
+exports.default = HomeScreen;
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJmaWxlIjoiL1VzZXJzL21pa2UvUHJvZ3JhbW1pbmcvcHJvamVjdHMvQ2FiaW5lZXIvc3JjL3NjcmVlbnMvSG9tZS9Ib21lU2NyZWVuLnRzeCIsIm1hcHBpbmdzIjoiOzs7OztBQUFBLGtEQUEwQjtBQUcxQiwrQ0FXc0I7QUFFdEIsMkRBQXNEO0FBQ3RELDRFQUF5QztBQUV6QyxtRUFBMkM7QUFFM0MscURBQXVEO0FBRXZELE1BQU0sVUFBVSxHQUFHLEdBQUcsRUFBRTtJQUN0QixNQUFNLFVBQVUsR0FBRyxJQUFBLDZCQUFjLEdBQUUsS0FBSyxNQUFNLENBQUM7SUFFL0MsTUFBTSxVQUFVLEdBQUcsSUFBQSxzQkFBYSxHQUFxQyxDQUFDO0lBRXRFLE9BQU8sQ0FDTCw4QkFBQywyQkFBWSxJQUFDLEtBQUssRUFBRSwyQkFBTSxDQUFDLFNBQVM7UUFFbkMsOEJBQUMsbUJBQUkscUNBQWtDO1FBQ3ZDLDhCQUFDLHFCQUFNLElBQ0wsS0FBSyxFQUFDLGtCQUFrQixFQUN4QixPQUFPLEVBQUUsR0FBRyxFQUFFLENBQ1osVUFBVSxDQUFDLFFBQVEsQ0FBQyxZQUFZLEVBQUU7Z0JBQ2hDLE1BQU0sRUFBRSxlQUFlO2FBQ3hCLENBQUMsR0FFSjtRQUNGLDhCQUFDLG1CQUFRLElBQUMsSUFBSSxFQUFFLG1CQUFTLEdBQUksQ0FDaEIsQ0FDaEIsQ0FBQztBQUNKLENBQUMsQ0FBQztBQUVGLGtCQUFlLFVBQVUsQ0FBQyIsIm5hbWVzIjpbXSwic291cmNlcyI6WyIvVXNlcnMvbWlrZS9Qcm9ncmFtbWluZy9wcm9qZWN0cy9DYWJpbmVlci9zcmMvc2NyZWVucy9Ib21lL0hvbWVTY3JlZW4udHN4Il0sInNvdXJjZXNDb250ZW50IjpbImltcG9ydCBSZWFjdCBmcm9tICdyZWFjdCc7XG5pbXBvcnQgdHlwZSB7TmF0aXZlU3RhY2tTY3JlZW5Qcm9wc30gZnJvbSAnQHJlYWN0LW5hdmlnYXRpb24vbmF0aXZlLXN0YWNrJztcblxuaW1wb3J0IHtcbiAgRmxhdExpc3QsXG4gIFNhZmVBcmVhVmlldyxcbiAgU2Nyb2xsVmlldyxcbiAgU3RhdHVzQmFyLFxuICBTdHlsZVNoZWV0LFxuICBUZXh0LFxuICB1c2VDb2xvclNjaGVtZSxcbiAgQnV0dG9uLFxuICBMaXN0UmVuZGVySXRlbSxcbiAgVmlldyxcbn0gZnJvbSAncmVhY3QtbmF0aXZlJztcblxuaW1wb3J0IHtIb21lTGlzdH0gZnJvbSAnY29tcG9uZW50cy9Ib21lTGlzdC9Ib21lTGlzdCc7XG5pbXBvcnQgc3R5bGVzIGZyb20gJy4vSG9tZVNjcmVlbi5zdHlsZXMnO1xuXG5pbXBvcnQgaG91c2VEYXRhIGZyb20gJy4uLy4uLy4uL2RhdGEuanNvbic7XG5pbXBvcnQgdHlwZSB7aG9tZU1haW5TY3JlZW5Qcm9wc30gZnJvbSAnLi4vLi4vdHlwZXMnO1xuaW1wb3J0IHt1c2VOYXZpZ2F0aW9ufSBmcm9tICdAcmVhY3QtbmF2aWdhdGlvbi9uYXRpdmUnO1xuXG5jb25zdCBIb21lU2NyZWVuID0gKCkgPT4ge1xuICBjb25zdCBpc0RhcmtNb2RlID0gdXNlQ29sb3JTY2hlbWUoKSA9PT0gJ2RhcmsnO1xuXG4gIGNvbnN0IG5hdmlnYXRpb24gPSB1c2VOYXZpZ2F0aW9uPGhvbWVNYWluU2NyZWVuUHJvcHNbJ25hdmlnYXRpb24nXT4oKTtcblxuICByZXR1cm4gKFxuICAgIDxTYWZlQXJlYVZpZXcgc3R5bGU9e3N0eWxlcy5jb250YWluZXJ9PlxuICAgICAgey8qIDxTdGF0dXNCYXIgYmFyU3R5bGU9e2lzRGFya01vZGUgPyAnbGlnaHQtY29udGVudCcgOiAnZGFyay1jb250ZW50J30gLz4gKi99XG4gICAgICA8VGV4dD5XZWxjb21lIHRvIHRoZSBIb21lIFNjcmVlbjwvVGV4dD5cbiAgICAgIDxCdXR0b25cbiAgICAgICAgdGl0bGU9XCJHbyBUbyBDaGVja2xpc3RzXCJcbiAgICAgICAgb25QcmVzcz17KCkgPT5cbiAgICAgICAgICBuYXZpZ2F0aW9uLm5hdmlnYXRlKCdDaGVja2xpc3RzJywge1xuICAgICAgICAgICAgc2NyZWVuOiAnQ2hlY2tsaXN0TWFpbicsXG4gICAgICAgICAgfSlcbiAgICAgICAgfVxuICAgICAgLz5cbiAgICAgIDxIb21lTGlzdCBkYXRhPXtob3VzZURhdGF9IC8+XG4gICAgPC9TYWZlQXJlYVZpZXc+XG4gICk7XG59O1xuXG5leHBvcnQgZGVmYXVsdCBIb21lU2NyZWVuO1xuIl0sInZlcnNpb24iOjN9

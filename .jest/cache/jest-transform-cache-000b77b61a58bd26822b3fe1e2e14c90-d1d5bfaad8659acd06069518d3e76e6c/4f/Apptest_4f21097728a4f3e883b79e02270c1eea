@@ -1,0 +1,16 @@
+5a2c2d8240e52512be8d74dc0ff91b71
+var _interopRequireDefault = require("@babel/runtime/helpers/interopRequireDefault");
+
+var _react = _interopRequireDefault(require("react"));
+
+require("react-native");
+
+var _App = _interopRequireDefault(require("../src/App"));
+
+var _testUtils = require("../jest/test-utils");
+
+it('renders correctly', function () {
+  (0, _testUtils.render)(_react.default.createElement(_App.default, null), {});
+});
+it('renders the home tab', function () {});
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJuYW1lcyI6WyJpdCIsInJlbmRlciJdLCJzb3VyY2VzIjpbIkFwcC10ZXN0LnRzeCJdLCJzb3VyY2VzQ29udGVudCI6WyIvKipcbiAqIEBmb3JtYXRcbiAqL1xuXG5pbXBvcnQgUmVhY3QgZnJvbSAncmVhY3QnO1xuaW1wb3J0ICdyZWFjdC1uYXRpdmUnO1xuaW1wb3J0IGZpcmVFdmVudCBmcm9tICdAdGVzdGluZy1saWJyYXJ5L3JlYWN0LW5hdGl2ZSc7XG5pbXBvcnQge3NldHVwU2VydmVyfSBmcm9tICdtc3cvbm9kZSc7XG5pbXBvcnQge3Jlc3R9IGZyb20gJ21zdyc7XG5pbXBvcnQgQXBwIGZyb20gJ0FwcCc7XG5cbi8vIE5vdGU6IHRlc3QgcmVuZGVyZXIgbXVzdCBiZSByZXF1aXJlZCBhZnRlciByZWFjdC1uYXRpdmUuXG5pbXBvcnQgcmVuZGVyZXIgZnJvbSAncmVhY3QtdGVzdC1yZW5kZXJlcic7XG5pbXBvcnQge3JlbmRlcn0gZnJvbSAnLi4vamVzdC90ZXN0LXV0aWxzJztcblxuaXQoJ3JlbmRlcnMgY29ycmVjdGx5JywgKCkgPT4ge1xuICByZW5kZXIoPEFwcCAvPiwge30pO1xufSk7XG5pdCgncmVuZGVycyB0aGUgaG9tZSB0YWInLCAoKSA9PiB7fSk7XG4iXSwibWFwcGluZ3MiOiI7O0FBSUE7O0FBQ0E7O0FBSUE7O0FBSUE7O0FBRUFBLEVBQUUsQ0FBQyxtQkFBRCxFQUFzQixZQUFNO0VBQzVCLElBQUFDLGlCQUFBLEVBQU8sNkJBQUMsWUFBRCxPQUFQLEVBQWdCLEVBQWhCO0FBQ0QsQ0FGQyxDQUFGO0FBR0FELEVBQUUsQ0FBQyxzQkFBRCxFQUF5QixZQUFNLENBQUUsQ0FBakMsQ0FBRiJ9

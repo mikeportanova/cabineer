@@ -1,0 +1,85 @@
+6ca8b7e05cbad7a71117b05bca1d4a02
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = useBackButton;
+
+var React = _interopRequireWildcard(require("react"));
+
+var _reactNative = require("react-native");
+
+function _getRequireWildcardCache(nodeInterop) {
+  if (typeof WeakMap !== "function") return null;
+  var cacheBabelInterop = new WeakMap();
+  var cacheNodeInterop = new WeakMap();
+  return (_getRequireWildcardCache = function _getRequireWildcardCache(nodeInterop) {
+    return nodeInterop ? cacheNodeInterop : cacheBabelInterop;
+  })(nodeInterop);
+}
+
+function _interopRequireWildcard(obj, nodeInterop) {
+  if (!nodeInterop && obj && obj.__esModule) {
+    return obj;
+  }
+
+  if (obj === null || typeof obj !== "object" && typeof obj !== "function") {
+    return {
+      default: obj
+    };
+  }
+
+  var cache = _getRequireWildcardCache(nodeInterop);
+
+  if (cache && cache.has(obj)) {
+    return cache.get(obj);
+  }
+
+  var newObj = {};
+  var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor;
+
+  for (var key in obj) {
+    if (key !== "default" && Object.prototype.hasOwnProperty.call(obj, key)) {
+      var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null;
+
+      if (desc && (desc.get || desc.set)) {
+        Object.defineProperty(newObj, key, desc);
+      } else {
+        newObj[key] = obj[key];
+      }
+    }
+  }
+
+  newObj.default = obj;
+
+  if (cache) {
+    cache.set(obj, newObj);
+  }
+
+  return newObj;
+}
+
+function useBackButton(ref) {
+  React.useEffect(function () {
+    var subscription = _reactNative.BackHandler.addEventListener('hardwareBackPress', function () {
+      var navigation = ref.current;
+
+      if (navigation == null) {
+        return false;
+      }
+
+      if (navigation.canGoBack()) {
+        navigation.goBack();
+        return true;
+      }
+
+      return false;
+    });
+
+    return function () {
+      return subscription.remove();
+    };
+  }, [ref]);
+}
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJtYXBwaW5ncyI6Ijs7Ozs7OztBQUlBOztBQUNBOzs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7O0FBRWUsU0FBU0EsYUFBVCxDQUNiQyxHQURhLEVBRWI7RUFDQUMsS0FBSyxDQUFDQyxTQUFORCxDQUFnQixZQUFNO0lBQ3BCLElBQU1FLFlBQVksR0FBR0MseUJBQVlDLGdCQUFaRCxDQUNuQixtQkFEbUJBLEVBRW5CLFlBQU07TUFDSixJQUFNRSxVQUFVLEdBQUdOLEdBQUcsQ0FBQ08sT0FBdkI7O01BRUEsSUFBSUQsVUFBVSxJQUFJLElBQWxCLEVBQXdCO1FBQ3RCLE9BQU8sS0FBUDtNQUNEOztNQUVELElBQUlBLFVBQVUsQ0FBQ0UsU0FBWEYsRUFBSixFQUE0QjtRQUMxQkEsVUFBVSxDQUFDRyxNQUFYSDtRQUVBLE9BQU8sSUFBUDtNQUNEOztNQUVELE9BQU8sS0FBUDtJQWZpQixFQUFyQjs7SUFtQkEsT0FBTztNQUFBLE9BQU1ILFlBQVksQ0FBQ08sTUFBYlAsRUFBTjtJQUFBLENBQVA7RUFwQkYsR0FxQkcsQ0FBQ0gsR0FBRCxDQXJCSEM7QUFzQkQiLCJuYW1lcyI6WyJ1c2VCYWNrQnV0dG9uIiwicmVmIiwiUmVhY3QiLCJ1c2VFZmZlY3QiLCJzdWJzY3JpcHRpb24iLCJCYWNrSGFuZGxlciIsImFkZEV2ZW50TGlzdGVuZXIiLCJuYXZpZ2F0aW9uIiwiY3VycmVudCIsImNhbkdvQmFjayIsImdvQmFjayIsInJlbW92ZSJdLCJzb3VyY2VzIjpbInVzZUJhY2tCdXR0b24udHN4Il0sInNvdXJjZXNDb250ZW50IjpbImltcG9ydCB0eXBlIHtcbiAgTmF2aWdhdGlvbkNvbnRhaW5lclJlZixcbiAgUGFyYW1MaXN0QmFzZSxcbn0gZnJvbSAnQHJlYWN0LW5hdmlnYXRpb24vY29yZSc7XG5pbXBvcnQgKiBhcyBSZWFjdCBmcm9tICdyZWFjdCc7XG5pbXBvcnQgeyBCYWNrSGFuZGxlciB9IGZyb20gJ3JlYWN0LW5hdGl2ZSc7XG5cbmV4cG9ydCBkZWZhdWx0IGZ1bmN0aW9uIHVzZUJhY2tCdXR0b24oXG4gIHJlZjogUmVhY3QuUmVmT2JqZWN0PE5hdmlnYXRpb25Db250YWluZXJSZWY8UGFyYW1MaXN0QmFzZT4+XG4pIHtcbiAgUmVhY3QudXNlRWZmZWN0KCgpID0+IHtcbiAgICBjb25zdCBzdWJzY3JpcHRpb24gPSBCYWNrSGFuZGxlci5hZGRFdmVudExpc3RlbmVyKFxuICAgICAgJ2hhcmR3YXJlQmFja1ByZXNzJyxcbiAgICAgICgpID0+IHtcbiAgICAgICAgY29uc3QgbmF2aWdhdGlvbiA9IHJlZi5jdXJyZW50O1xuXG4gICAgICAgIGlmIChuYXZpZ2F0aW9uID09IG51bGwpIHtcbiAgICAgICAgICByZXR1cm4gZmFsc2U7XG4gICAgICAgIH1cblxuICAgICAgICBpZiAobmF2aWdhdGlvbi5jYW5Hb0JhY2soKSkge1xuICAgICAgICAgIG5hdmlnYXRpb24uZ29CYWNrKCk7XG5cbiAgICAgICAgICByZXR1cm4gdHJ1ZTtcbiAgICAgICAgfVxuXG4gICAgICAgIHJldHVybiBmYWxzZTtcbiAgICAgIH1cbiAgICApO1xuXG4gICAgcmV0dXJuICgpID0+IHN1YnNjcmlwdGlvbi5yZW1vdmUoKTtcbiAgfSwgW3JlZl0pO1xufVxuIl19

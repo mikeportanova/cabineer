@@ -8,7 +8,6 @@ import HomeScreen from 'screens/Home/HomeScreen';
 import type {
   HouseData,
   RootTabParamList,
-  RootStackParamList,
   ChecklistsStackParamList,
   HomeStackParamList,
   MainNavStackParamsList,
@@ -19,7 +18,7 @@ const MainNavStack = createNativeStackNavigator<MainNavStackParamsList>();
 const HomeStack = createNativeStackNavigator<HomeStackParamList>();
 const ChecklistsStack = createNativeStackNavigator<ChecklistsStackParamList>();
 
-export const HomeStackNavigator = props => {
+export const HomeStackNavigator = () => {
   return (
     <HomeStack.Navigator
       screenOptions={{
@@ -30,7 +29,7 @@ export const HomeStackNavigator = props => {
   );
 };
 
-export const ChecklistsStackNavigator = props => {
+export const ChecklistsStackNavigator = () => {
   return (
     <ChecklistsStack.Navigator
       screenOptions={{
@@ -46,7 +45,7 @@ export const ChecklistsStackNavigator = props => {
 
 const Tab = createBottomTabNavigator<RootTabParamList>();
 
-export const TabNavigator = props => {
+export const TabNavigator = () => {
   return (
     <Tab.Navigator>
       <Tab.Screen name="Home" component={HomeStackNavigator} />
@@ -55,7 +54,7 @@ export const TabNavigator = props => {
   );
 };
 
-export const TopNavigator = props => {
+export const TopNavigator = () => {
   return (
     <MainNavStack.Navigator screenOptions={{headerShown: false}}>
       {/* <MainNavStack.Screen name="Login" component={LoginScreen} */}

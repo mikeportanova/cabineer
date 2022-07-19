@@ -1,0 +1,61 @@
+cfbf8b38299ddfb3d9879065506678e9
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+Object.defineProperty(exports, "BottomTabBar", {
+  enumerable: true,
+  get: function get() {
+    return _BottomTabBar.default;
+  }
+});
+Object.defineProperty(exports, "BottomTabBarHeightCallbackContext", {
+  enumerable: true,
+  get: function get() {
+    return _BottomTabBarHeightCallbackContext.default;
+  }
+});
+Object.defineProperty(exports, "BottomTabBarHeightContext", {
+  enumerable: true,
+  get: function get() {
+    return _BottomTabBarHeightContext.default;
+  }
+});
+Object.defineProperty(exports, "BottomTabView", {
+  enumerable: true,
+  get: function get() {
+    return _BottomTabView.default;
+  }
+});
+Object.defineProperty(exports, "createBottomTabNavigator", {
+  enumerable: true,
+  get: function get() {
+    return _createBottomTabNavigator.default;
+  }
+});
+Object.defineProperty(exports, "useBottomTabBarHeight", {
+  enumerable: true,
+  get: function get() {
+    return _useBottomTabBarHeight.default;
+  }
+});
+
+var _createBottomTabNavigator = _interopRequireDefault(require("./navigators/createBottomTabNavigator"));
+
+var _BottomTabBar = _interopRequireDefault(require("./views/BottomTabBar"));
+
+var _BottomTabView = _interopRequireDefault(require("./views/BottomTabView"));
+
+var _BottomTabBarHeightCallbackContext = _interopRequireDefault(require("./utils/BottomTabBarHeightCallbackContext"));
+
+var _BottomTabBarHeightContext = _interopRequireDefault(require("./utils/BottomTabBarHeightContext"));
+
+var _useBottomTabBarHeight = _interopRequireDefault(require("./utils/useBottomTabBarHeight"));
+
+function _interopRequireDefault(obj) {
+  return obj && obj.__esModule ? obj : {
+    default: obj
+  };
+}
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7O0FBR0E7O0FBS0E7O0FBQ0E7O0FBS0E7O0FBQ0E7O0FBQ0EiLCJuYW1lcyI6W10sInNvdXJjZXMiOlsiaW5kZXgudHN4Il0sInNvdXJjZXNDb250ZW50IjpbIi8qKlxuICogTmF2aWdhdG9yc1xuICovXG5leHBvcnQgeyBkZWZhdWx0IGFzIGNyZWF0ZUJvdHRvbVRhYk5hdmlnYXRvciB9IGZyb20gJy4vbmF2aWdhdG9ycy9jcmVhdGVCb3R0b21UYWJOYXZpZ2F0b3InO1xuXG4vKipcbiAqIFZpZXdzXG4gKi9cbmV4cG9ydCB7IGRlZmF1bHQgYXMgQm90dG9tVGFiQmFyIH0gZnJvbSAnLi92aWV3cy9Cb3R0b21UYWJCYXInO1xuZXhwb3J0IHsgZGVmYXVsdCBhcyBCb3R0b21UYWJWaWV3IH0gZnJvbSAnLi92aWV3cy9Cb3R0b21UYWJWaWV3JztcblxuLyoqXG4gKiBVdGlsaXRpZXNcbiAqL1xuZXhwb3J0IHsgZGVmYXVsdCBhcyBCb3R0b21UYWJCYXJIZWlnaHRDYWxsYmFja0NvbnRleHQgfSBmcm9tICcuL3V0aWxzL0JvdHRvbVRhYkJhckhlaWdodENhbGxiYWNrQ29udGV4dCc7XG5leHBvcnQgeyBkZWZhdWx0IGFzIEJvdHRvbVRhYkJhckhlaWdodENvbnRleHQgfSBmcm9tICcuL3V0aWxzL0JvdHRvbVRhYkJhckhlaWdodENvbnRleHQnO1xuZXhwb3J0IHsgZGVmYXVsdCBhcyB1c2VCb3R0b21UYWJCYXJIZWlnaHQgfSBmcm9tICcuL3V0aWxzL3VzZUJvdHRvbVRhYkJhckhlaWdodCc7XG5cbi8qKlxuICogVHlwZXNcbiAqL1xuZXhwb3J0IHR5cGUge1xuICBCb3R0b21UYWJCYXJCdXR0b25Qcm9wcyxcbiAgQm90dG9tVGFiQmFyUHJvcHMsXG4gIEJvdHRvbVRhYkhlYWRlclByb3BzLFxuICBCb3R0b21UYWJOYXZpZ2F0aW9uRXZlbnRNYXAsXG4gIEJvdHRvbVRhYk5hdmlnYXRpb25PcHRpb25zLFxuICBCb3R0b21UYWJOYXZpZ2F0aW9uUHJvcCxcbiAgQm90dG9tVGFiU2NyZWVuUHJvcHMsXG59IGZyb20gJy4vdHlwZXMnO1xuIl19

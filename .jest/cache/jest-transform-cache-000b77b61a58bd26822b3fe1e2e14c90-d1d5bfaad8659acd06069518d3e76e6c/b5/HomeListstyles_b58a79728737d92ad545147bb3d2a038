@@ -1,0 +1,23 @@
+00eb1680c31d9ec521de404b29427a9e
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _reactNative = require("react-native");
+
+var _default = _reactNative.StyleSheet.create({
+  container: {
+    width: '100%'
+  },
+  item: {
+    flex: 1,
+    width: '100%',
+    paddingVertical: 4,
+    paddingHorizontal: 12
+  },
+  title: {}
+});
+
+exports.default = _default;
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJuYW1lcyI6WyJTdHlsZVNoZWV0IiwiY3JlYXRlIiwiY29udGFpbmVyIiwid2lkdGgiLCJpdGVtIiwiZmxleCIsInBhZGRpbmdWZXJ0aWNhbCIsInBhZGRpbmdIb3Jpem9udGFsIiwidGl0bGUiXSwic291cmNlcyI6WyJIb21lTGlzdC5zdHlsZXMudHMiXSwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IHtTdHlsZVNoZWV0fSBmcm9tICdyZWFjdC1uYXRpdmUnO1xuXG5leHBvcnQgZGVmYXVsdCBTdHlsZVNoZWV0LmNyZWF0ZSh7XG4gIGNvbnRhaW5lcjoge1xuICAgIHdpZHRoOiAnMTAwJScsXG4gIH0sXG4gIGl0ZW06IHtcbiAgICBmbGV4OiAxLFxuXG4gICAgd2lkdGg6ICcxMDAlJyxcbiAgICBwYWRkaW5nVmVydGljYWw6IDQsXG4gICAgcGFkZGluZ0hvcml6b250YWw6IDEyLFxuICB9LFxuICB0aXRsZToge30sXG59KTtcbiJdLCJtYXBwaW5ncyI6Ijs7Ozs7QUFBQTs7ZUFFZUEsdUJBQUEsQ0FBV0MsTUFBWCxDQUFrQjtFQUMvQkMsU0FBUyxFQUFFO0lBQ1RDLEtBQUssRUFBRTtFQURFLENBRG9CO0VBSS9CQyxJQUFJLEVBQUU7SUFDSkMsSUFBSSxFQUFFLENBREY7SUFHSkYsS0FBSyxFQUFFLE1BSEg7SUFJSkcsZUFBZSxFQUFFLENBSmI7SUFLSkMsaUJBQWlCLEVBQUU7RUFMZixDQUp5QjtFQVcvQkMsS0FBSyxFQUFFO0FBWHdCLENBQWxCLEMifQ==

@@ -1,0 +1,10 @@
+35092c47d0bb4e99af9146cc5b282941
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const react_native_1 = require("react-native");
+exports.default = react_native_1.StyleSheet.create({
+    container: {
+        flex: 1,
+    },
+});
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJmaWxlIjoiL1VzZXJzL21pa2UvUHJvZ3JhbW1pbmcvcHJvamVjdHMvQ2FiaW5lZXIvc3JjL3NjcmVlbnMvQ2hlY2tMaXN0L0NoZWNrTGlzdFNjcmVlbi5zdHlsZXMudHMiLCJtYXBwaW5ncyI6Ijs7QUFBQSwrQ0FBd0M7QUFFeEMsa0JBQWUseUJBQVUsQ0FBQyxNQUFNLENBQUM7SUFDL0IsU0FBUyxFQUFFO1FBQ1QsSUFBSSxFQUFFLENBQUM7S0FDUjtDQUNGLENBQUMsQ0FBQyIsIm5hbWVzIjpbXSwic291cmNlcyI6WyIvVXNlcnMvbWlrZS9Qcm9ncmFtbWluZy9wcm9qZWN0cy9DYWJpbmVlci9zcmMvc2NyZWVucy9DaGVja0xpc3QvQ2hlY2tMaXN0U2NyZWVuLnN0eWxlcy50cyJdLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQge1N0eWxlU2hlZXR9IGZyb20gJ3JlYWN0LW5hdGl2ZSc7XG5cbmV4cG9ydCBkZWZhdWx0IFN0eWxlU2hlZXQuY3JlYXRlKHtcbiAgY29udGFpbmVyOiB7XG4gICAgZmxleDogMSxcbiAgfSxcbn0pO1xuIl0sInZlcnNpb24iOjN9

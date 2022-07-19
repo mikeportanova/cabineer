@@ -1,0 +1,21 @@
+cc97151efb0003863ffe6a4873ba6187
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+var DarkTheme = {
+  dark: true,
+  colors: {
+    primary: 'rgb(10, 132, 255)',
+    background: 'rgb(1, 1, 1)',
+    card: 'rgb(18, 18, 18)',
+    text: 'rgb(229, 229, 231)',
+    border: 'rgb(39, 39, 41)',
+    notification: 'rgb(255, 69, 58)'
+  }
+};
+var _default = DarkTheme;
+exports.default = _default;
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJtYXBwaW5ncyI6Ijs7Ozs7O0FBRUEsSUFBTUEsU0FBZ0IsR0FBRztFQUN2QkMsSUFBSSxFQUFFLElBRGlCO0VBRXZCQyxNQUFNLEVBQUU7SUFDTkMsT0FBTyxFQUFFLG1CQURIO0lBRU5DLFVBQVUsRUFBRSxjQUZOO0lBR05DLElBQUksRUFBRSxpQkFIQTtJQUlOQyxJQUFJLEVBQUUsb0JBSkE7SUFLTkMsTUFBTSxFQUFFLGlCQUxGO0lBTU5DLFlBQVksRUFBRTtFQU5SO0FBRmUsQ0FBekI7ZUFZZVIiLCJuYW1lcyI6WyJEYXJrVGhlbWUiLCJkYXJrIiwiY29sb3JzIiwicHJpbWFyeSIsImJhY2tncm91bmQiLCJjYXJkIiwidGV4dCIsImJvcmRlciIsIm5vdGlmaWNhdGlvbiJdLCJzb3VyY2VzIjpbIkRhcmtUaGVtZS50c3giXSwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IHR5cGUgeyBUaGVtZSB9IGZyb20gJy4uL3R5cGVzJztcblxuY29uc3QgRGFya1RoZW1lOiBUaGVtZSA9IHtcbiAgZGFyazogdHJ1ZSxcbiAgY29sb3JzOiB7XG4gICAgcHJpbWFyeTogJ3JnYigxMCwgMTMyLCAyNTUpJyxcbiAgICBiYWNrZ3JvdW5kOiAncmdiKDEsIDEsIDEpJyxcbiAgICBjYXJkOiAncmdiKDE4LCAxOCwgMTgpJyxcbiAgICB0ZXh0OiAncmdiKDIyOSwgMjI5LCAyMzEpJyxcbiAgICBib3JkZXI6ICdyZ2IoMzksIDM5LCA0MSknLFxuICAgIG5vdGlmaWNhdGlvbjogJ3JnYigyNTUsIDY5LCA1OCknLFxuICB9LFxufTtcblxuZXhwb3J0IGRlZmF1bHQgRGFya1RoZW1lO1xuIl19

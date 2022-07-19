@@ -1,0 +1,1 @@
+{"version":3,"mappings":";;;;;;;AAAA;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;eAEeA,KAAK,CAACC,aAAND,CACbE,SADaF","names":["React","createContext","undefined"],"sources":["BottomTabBarHeightCallbackContext.tsx"],"sourcesContent":["import * as React from 'react';\n\nexport default React.createContext<((height: number) => void) | undefined>(\n  undefined\n);\n"]}

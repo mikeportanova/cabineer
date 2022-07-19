@@ -1,0 +1,47 @@
+555b0c3b22aacb29b3e55e44b00e98df
+"use strict";
+
+var _interopRequireDefault = require("@babel/runtime/helpers/interopRequireDefault");
+
+var _slicedToArray2 = _interopRequireDefault(require("@babel/runtime/helpers/slicedToArray"));
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = validatePathConfig;
+
+var formatToList = function formatToList(items) {
+  return items.map(function (key) {
+    return "- " + key;
+  }).join('\n');
+};
+
+function validatePathConfig(config) {
+  var root = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : true;
+  var validKeys = ['initialRouteName', 'screens'];
+
+  if (!root) {
+    validKeys.push('path', 'exact', 'stringify', 'parse');
+  }
+
+  var invalidKeys = Object.keys(config).filter(function (key) {
+    return !validKeys.includes(key);
+  });
+
+  if (invalidKeys.length) {
+    throw new Error("Found invalid properties in the configuration:\n" + formatToList(invalidKeys) + "\n\nDid you forget to specify them under a 'screens' property?\n\nYou can only specify the following properties:\n" + formatToList(validKeys) + "\n\nSee https://reactnavigation.org/docs/configuring-links for more details on how to specify a linking configuration.");
+  }
+
+  if (config.screens) {
+    Object.entries(config.screens).forEach(function (_ref) {
+      var _ref2 = (0, _slicedToArray2.default)(_ref, 2),
+          _ = _ref2[0],
+          value = _ref2[1];
+
+      if (typeof value !== 'string') {
+        validatePathConfig(value, false);
+      }
+    });
+  }
+}
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7Ozs7QUFBQSxJQUFNQSxZQUFZLEdBQUlDLFNBQWhCRCxZQUFnQkMsTUFBRDtFQUFBLE9BQ25CQSxLQUFLLENBQUNDLEdBQU5ELENBQVdFLGFBQUQ7SUFBQSxjQUFjQSxHQUFkO0VBQUEsQ0FBVkYsRUFBK0JHLElBQS9CSCxDQUFvQyxJQUFwQ0EsQ0FEbUI7QUFBQSxDQUFyQjs7QUFHZSxTQUFTSSxrQkFBVCxDQUE0QkMsTUFBNUIsRUFBc0Q7RUFBQSxJQUFiQyxJQUFhLHVFQUFOLElBQU07RUFDbkUsSUFBTUMsU0FBUyxHQUFHLENBQUMsa0JBQUQsRUFBcUIsU0FBckIsQ0FBbEI7O0VBRUEsSUFBSSxDQUFDRCxJQUFMLEVBQVc7SUFDVEMsU0FBUyxDQUFDQyxJQUFWRCxDQUFlLE1BQWZBLEVBQXVCLE9BQXZCQSxFQUFnQyxXQUFoQ0EsRUFBNkMsT0FBN0NBO0VBQ0Q7O0VBRUQsSUFBTUUsV0FBVyxHQUFHQyxNQUFNLENBQUNDLElBQVBELENBQVlMLE1BQVpLLEVBQW9CRSxNQUFwQkYsQ0FDakJSLGFBQUQ7SUFBQSxPQUFTLENBQUNLLFNBQVMsQ0FBQ00sUUFBVk4sQ0FBbUJMLEdBQW5CSyxDQUFWO0VBQUEsQ0FEa0JHLENBQXBCOztFQUlBLElBQUlELFdBQVcsQ0FBQ0ssTUFBaEIsRUFBd0I7SUFDdEIsTUFBTSxJQUFJQyxLQUFKLHNEQUMrQ2hCLFlBQVksQ0FDN0RVLFdBRDZELENBRDNELDBIQUdrSFYsWUFBWSxDQUNoSVEsU0FEZ0ksQ0FIOUgsNEhBQU47RUFPRDs7RUFFRCxJQUFJRixNQUFNLENBQUNXLE9BQVgsRUFBb0I7SUFDbEJOLE1BQU0sQ0FBQ08sT0FBUFAsQ0FBZUwsTUFBTSxDQUFDVyxPQUF0Qk4sRUFBK0JRLE9BQS9CUixDQUF1QyxnQkFBZ0I7TUFBQTtNQUFBLElBQWRTLENBQWM7TUFBQSxJQUFYQyxLQUFXOztNQUNyRCxJQUFJLE9BQU9BLEtBQVAsS0FBaUIsUUFBckIsRUFBK0I7UUFDN0JoQixrQkFBa0IsQ0FBQ2dCLEtBQUQsRUFBUSxLQUFSLENBQWxCaEI7TUFDRDtJQUhIO0VBS0Q7QUFDRiIsIm5hbWVzIjpbImZvcm1hdFRvTGlzdCIsIml0ZW1zIiwibWFwIiwia2V5Iiwiam9pbiIsInZhbGlkYXRlUGF0aENvbmZpZyIsImNvbmZpZyIsInJvb3QiLCJ2YWxpZEtleXMiLCJwdXNoIiwiaW52YWxpZEtleXMiLCJPYmplY3QiLCJrZXlzIiwiZmlsdGVyIiwiaW5jbHVkZXMiLCJsZW5ndGgiLCJFcnJvciIsInNjcmVlbnMiLCJlbnRyaWVzIiwiZm9yRWFjaCIsIl8iLCJ2YWx1ZSJdLCJzb3VyY2VzIjpbInZhbGlkYXRlUGF0aENvbmZpZy50c3giXSwic291cmNlc0NvbnRlbnQiOlsiY29uc3QgZm9ybWF0VG9MaXN0ID0gKGl0ZW1zOiBzdHJpbmdbXSkgPT5cbiAgaXRlbXMubWFwKChrZXkpID0+IGAtICR7a2V5fWApLmpvaW4oJ1xcbicpO1xuXG5leHBvcnQgZGVmYXVsdCBmdW5jdGlvbiB2YWxpZGF0ZVBhdGhDb25maWcoY29uZmlnOiBhbnksIHJvb3QgPSB0cnVlKSB7XG4gIGNvbnN0IHZhbGlkS2V5cyA9IFsnaW5pdGlhbFJvdXRlTmFtZScsICdzY3JlZW5zJ107XG5cbiAgaWYgKCFyb290KSB7XG4gICAgdmFsaWRLZXlzLnB1c2goJ3BhdGgnLCAnZXhhY3QnLCAnc3RyaW5naWZ5JywgJ3BhcnNlJyk7XG4gIH1cblxuICBjb25zdCBpbnZhbGlkS2V5cyA9IE9iamVjdC5rZXlzKGNvbmZpZykuZmlsdGVyKFxuICAgIChrZXkpID0+ICF2YWxpZEtleXMuaW5jbHVkZXMoa2V5KVxuICApO1xuXG4gIGlmIChpbnZhbGlkS2V5cy5sZW5ndGgpIHtcbiAgICB0aHJvdyBuZXcgRXJyb3IoXG4gICAgICBgRm91bmQgaW52YWxpZCBwcm9wZXJ0aWVzIGluIHRoZSBjb25maWd1cmF0aW9uOlxcbiR7Zm9ybWF0VG9MaXN0KFxuICAgICAgICBpbnZhbGlkS2V5c1xuICAgICAgKX1cXG5cXG5EaWQgeW91IGZvcmdldCB0byBzcGVjaWZ5IHRoZW0gdW5kZXIgYSAnc2NyZWVucycgcHJvcGVydHk/XFxuXFxuWW91IGNhbiBvbmx5IHNwZWNpZnkgdGhlIGZvbGxvd2luZyBwcm9wZXJ0aWVzOlxcbiR7Zm9ybWF0VG9MaXN0KFxuICAgICAgICB2YWxpZEtleXNcbiAgICAgICl9XFxuXFxuU2VlIGh0dHBzOi8vcmVhY3RuYXZpZ2F0aW9uLm9yZy9kb2NzL2NvbmZpZ3VyaW5nLWxpbmtzIGZvciBtb3JlIGRldGFpbHMgb24gaG93IHRvIHNwZWNpZnkgYSBsaW5raW5nIGNvbmZpZ3VyYXRpb24uYFxuICAgICk7XG4gIH1cblxuICBpZiAoY29uZmlnLnNjcmVlbnMpIHtcbiAgICBPYmplY3QuZW50cmllcyhjb25maWcuc2NyZWVucykuZm9yRWFjaCgoW18sIHZhbHVlXSkgPT4ge1xuICAgICAgaWYgKHR5cGVvZiB2YWx1ZSAhPT0gJ3N0cmluZycpIHtcbiAgICAgICAgdmFsaWRhdGVQYXRoQ29uZmlnKHZhbHVlLCBmYWxzZSk7XG4gICAgICB9XG4gICAgfSk7XG4gIH1cbn1cbiJdfQ==

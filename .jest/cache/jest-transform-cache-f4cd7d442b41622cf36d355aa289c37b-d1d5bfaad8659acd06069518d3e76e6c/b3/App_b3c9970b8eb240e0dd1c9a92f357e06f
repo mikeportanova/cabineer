@@ -1,0 +1,28 @@
+3a263b70d0c7542d4afd7ca6f0b37692
+"use strict";
+/**
+ * Sample React Native App
+ * https://github.com/facebook/react-native
+ *
+ * Generated with the TypeScript template
+ * https://github.com/react-native-community/react-native-template-typescript
+ *
+ * @format
+ */
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+const react_1 = __importDefault(require("react"));
+const react_native_1 = require("react-native");
+const react_native_safe_area_context_1 = require("react-native-safe-area-context");
+const navigation_1 = require("navigators/navigation");
+const native_1 = require("@react-navigation/native");
+const App = () => {
+    const isDarkMode = (0, react_native_1.useColorScheme)() === 'dark';
+    return (react_1.default.createElement(react_native_safe_area_context_1.SafeAreaProvider, null,
+        react_1.default.createElement(native_1.NavigationContainer, null,
+            react_1.default.createElement(navigation_1.TopNavigator, null))));
+};
+exports.default = App;
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJmaWxlIjoiL1VzZXJzL21pa2UvUHJvZ3JhbW1pbmcvcHJvamVjdHMvQ2FiaW5lZXIvc3JjL0FwcC50c3giLCJtYXBwaW5ncyI6IjtBQUFBOzs7Ozs7OztHQVFHOzs7OztBQUVILGtEQUEwQjtBQUMxQiwrQ0FBdUQ7QUFDdkQsbUZBQWdFO0FBQ2hFLHNEQUFtRDtBQUNuRCxxREFBNkQ7QUFFN0QsTUFBTSxHQUFHLEdBQUcsR0FBRyxFQUFFO0lBQ2YsTUFBTSxVQUFVLEdBQUcsSUFBQSw2QkFBYyxHQUFFLEtBQUssTUFBTSxDQUFDO0lBRS9DLE9BQU8sQ0FDTCw4QkFBQyxpREFBZ0I7UUFFZiw4QkFBQyw0QkFBbUI7WUFDbEIsOEJBQUMseUJBQVksT0FBRyxDQUNJLENBQ0wsQ0FDcEIsQ0FBQztBQUNKLENBQUMsQ0FBQztBQUVGLGtCQUFlLEdBQUcsQ0FBQyIsIm5hbWVzIjpbXSwic291cmNlcyI6WyIvVXNlcnMvbWlrZS9Qcm9ncmFtbWluZy9wcm9qZWN0cy9DYWJpbmVlci9zcmMvQXBwLnRzeCJdLCJzb3VyY2VzQ29udGVudCI6WyIvKipcbiAqIFNhbXBsZSBSZWFjdCBOYXRpdmUgQXBwXG4gKiBodHRwczovL2dpdGh1Yi5jb20vZmFjZWJvb2svcmVhY3QtbmF0aXZlXG4gKlxuICogR2VuZXJhdGVkIHdpdGggdGhlIFR5cGVTY3JpcHQgdGVtcGxhdGVcbiAqIGh0dHBzOi8vZ2l0aHViLmNvbS9yZWFjdC1uYXRpdmUtY29tbXVuaXR5L3JlYWN0LW5hdGl2ZS10ZW1wbGF0ZS10eXBlc2NyaXB0XG4gKlxuICogQGZvcm1hdFxuICovXG5cbmltcG9ydCBSZWFjdCBmcm9tICdyZWFjdCc7XG5pbXBvcnQge1N0YXR1c0JhciwgdXNlQ29sb3JTY2hlbWV9IGZyb20gJ3JlYWN0LW5hdGl2ZSc7XG5pbXBvcnQge1NhZmVBcmVhUHJvdmlkZXJ9IGZyb20gJ3JlYWN0LW5hdGl2ZS1zYWZlLWFyZWEtY29udGV4dCc7XG5pbXBvcnQge1RvcE5hdmlnYXRvcn0gZnJvbSAnbmF2aWdhdG9ycy9uYXZpZ2F0aW9uJztcbmltcG9ydCB7TmF2aWdhdGlvbkNvbnRhaW5lcn0gZnJvbSAnQHJlYWN0LW5hdmlnYXRpb24vbmF0aXZlJztcblxuY29uc3QgQXBwID0gKCkgPT4ge1xuICBjb25zdCBpc0RhcmtNb2RlID0gdXNlQ29sb3JTY2hlbWUoKSA9PT0gJ2RhcmsnO1xuXG4gIHJldHVybiAoXG4gICAgPFNhZmVBcmVhUHJvdmlkZXI+XG4gICAgICB7LyogPFN0YXR1c0JhciBiYXJTdHlsZT17aXNEYXJrTW9kZSA/ICdsaWdodC1jb250ZW50JyA6ICdkYXJrLWNvbnRlbnQnfSAvPiAqL31cbiAgICAgIDxOYXZpZ2F0aW9uQ29udGFpbmVyPlxuICAgICAgICA8VG9wTmF2aWdhdG9yIC8+XG4gICAgICA8L05hdmlnYXRpb25Db250YWluZXI+XG4gICAgPC9TYWZlQXJlYVByb3ZpZGVyPlxuICApO1xufTtcblxuZXhwb3J0IGRlZmF1bHQgQXBwO1xuIl0sInZlcnNpb24iOjN9
